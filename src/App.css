@@ -69,6 +69,17 @@
   height: 15vh;
 }
 
+@media (max-width: 440px) {
+  .form-wrapper {
+    height: 35vh;
+    flex-wrap: wrap;
+  }
+
+  .art-wrapper {
+    height: 50vh;
+  }
+}
+
 svg {
   display: block;
   margin-left: auto;
