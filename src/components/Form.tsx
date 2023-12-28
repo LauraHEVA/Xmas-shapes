@@ -15,7 +15,7 @@ const Form = ({numOfLines, setNumOfLines, colorTheme, setColorTheme, shape, setS
               id="num-of-lines"
               type="range"
               min="1"
-              max="15"
+              max="20"
               value={numOfLines}
               onChange={(event) => {
               setNumOfLines(parseInt(event.target.value));

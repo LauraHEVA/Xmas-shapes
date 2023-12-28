@@ -9,15 +9,15 @@
   }
 }
 
-.App-logo-inverse {
+.App-logo-reverse {
   height: 60px;
   pointer-events: none;
   color: red; /* Not working fine */
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo-inverse {
-    animation: App-logo-spin-inverse infinite 10s linear;
+  .App-logo-reverse {
+    animation: App-logo-spin-reverse infinite 10s linear;
   }
 }
 
@@ -41,7 +41,7 @@
   }
 }
 
-@keyframes App-logo-spin-inverse {
+@keyframes App-logo-spin-reverse {
   from {
     transform: rotate(0deg);
   }
@@ -77,6 +77,9 @@
 
   .art-wrapper {
     height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
