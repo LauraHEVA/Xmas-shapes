@@ -1,23 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
+import Form from './components/Form.tsx';
+import Header from './components/Header.tsx';
+import GenerativeArt from './components/GenerativeArt.tsx';
+import React from 'react';
 
 function App() {
+  const [numOfLines, setNumOfLines] = React.useState(5);
+  const [colorTheme, setColorTheme] =
+    React.useState('basic');
+  const [shape, setShape] = React.useState('circles');
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header/>
+      <GenerativeArt
+        numOfLines={numOfLines}
+        colorTheme={colorTheme}
+        shape={shape}
+      />
+      <Form numOfLines={numOfLines}
+        colorTheme={colorTheme}
+        shape={shape} 
+        setNumOfLines={setNumOfLines} 
+        setColorTheme={setColorTheme} 
+        setShape={setShape}/>
     </div>
   );
 }
