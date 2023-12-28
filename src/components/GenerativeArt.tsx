@@ -25,10 +25,8 @@ function Circle({ index, colors }) {
   );
 }
 
-function Polygon({ index, colors }) {
+function Polygon({ index, colors, numOfPoints=5 }) {
   const pointDistance = index * 9 + 5;
-  const numOfPoints = 5
-    ;
   const angles = range(numOfPoints).map((index) =>
     normalize(
       index,
@@ -65,6 +63,7 @@ function Polygon({ index, colors }) {
 
 function GenerativeArt({
   numOfLines,
+  numOfPoints,
   colorTheme,
   shape,
 }) {
@@ -93,6 +92,7 @@ function GenerativeArt({
                 key={index}
                 index={index}
                 colors={colors}
+                numOfPoints={shape === 'circles' ? undefined : numOfPoints}
               />
             );
           }

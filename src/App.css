@@ -1,39 +1,35 @@
-.App {
-  text-align: center;
-}
-
 .App-logo {
-  height: 150px;
+  height: 100px;
   pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 10s linear;
   }
 }
 
 .App-logo-inverse {
-  height: 100px;
+  height: 60px;
   pointer-events: none;
   color: red; /* Not working fine */
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo-inverse {
-    animation: App-logo-spin-inverse infinite 20s linear;
+    animation: App-logo-spin-inverse infinite 10s linear;
   }
 }
 
 .App-header {
+  width: 100%;
+  padding: 15px;
   background-color: #ed4d4d;
-  min-height: 15vh;
+  height: 10vh;
   display: flex;
   flex-direction: flex-start;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: center;  
 }
 
 @keyframes App-logo-spin {
@@ -60,4 +56,60 @@
   align-items: center;
   justify-content: center;
   height: 70vh;
+  border: 5px solid black;
+}
+
+.form-wrapper {
+  font-family: 'Ubuntu', sans-serif;
+  background-color: #e6dddd;
+  display: flex;
+  flex-direction: flex-start;
+  align-items: center;
+  justify-content: space-around;
+  height: 15vh;
+}
+
+svg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.col {
+  flex: 1;
+  min-width: 155px;
+}
+
+input[type=range], select {
+  display: block;
+  width: 100%;
+}
+
+.control-heading {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 1.125rem;
+}
+
+.radio-wrapper {
+  display: flex;
+  gap: 24px;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+@media (max-width: 440px) {
+  .row {
+    flex-direction: column;
+  }
 }

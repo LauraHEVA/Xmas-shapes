@@ -7,22 +7,28 @@ import React from 'react';
 function App() {
   const [numOfLines, setNumOfLines] = React.useState(5);
   const [colorTheme, setColorTheme] =
-    React.useState('basic');
+  React.useState('basic');
   const [shape, setShape] = React.useState('circles');
+  const [numOfPoints, setNumOfPoints] = React.useState(3);
   return (
     <div className="App">
       <Header/>
       <GenerativeArt
         numOfLines={numOfLines}
+        numOfPoints={numOfPoints}
         colorTheme={colorTheme}
         shape={shape}
       />
-      <Form numOfLines={numOfLines}
+      <Form 
+        numOfLines={numOfLines}
         colorTheme={colorTheme}
         shape={shape} 
+        numOfPoints={numOfPoints}
         setNumOfLines={setNumOfLines} 
         setColorTheme={setColorTheme} 
-        setShape={setShape}/>
+        setShape={setShape}
+        setNumOfPoints={setNumOfPoints}
+        />
     </div>
   );
 }
