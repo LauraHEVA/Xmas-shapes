@@ -22,9 +22,8 @@
 }
 
 .App-header {
-  width: 100%;
   padding: 15px;
-  background-color: #ed4d4d;
+  background-color: #e0e1dd;
   height: 10vh;
   display: flex;
   flex-direction: flex-start;
@@ -61,7 +60,7 @@
 
 .form-wrapper {
   font-family: 'Ubuntu', sans-serif;
-  background-color: #e6dddd;
+  background-color: #e0e1dd;
   display: flex;
   flex-direction: flex-start;
   align-items: center;

@@ -3,7 +3,7 @@ import SnowSvg from './SnowSvg.tsx';
 
 const Snow = ({ reverse = false }) => {
   const green = '#4f772d';
-  const white = '#e0e1dd';
+  const white = '#ed4d4d';
   const [state, setState] = React.useState({ color: white });
 
   const changeColor = () => {
