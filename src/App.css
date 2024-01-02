@@ -142,3 +142,9 @@ input[type=range], select {
     flex-direction: column;
   }
 }
+
+@media (max-width: 740px) {
+  .snow-wrapper--disabled-mobile {
+    display: none;
+  }
+}

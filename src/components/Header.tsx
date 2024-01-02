@@ -7,14 +7,12 @@ const Header = () => {
             <Snow reverse={true}/>
             <Snow/>
             <Snow reverse={true}/>
-            <Snow/>
-            <Snow reverse={true}/>
-            <Snow/>
-            <Snow reverse={true}/>
-            <Snow/>
-            <Snow reverse={true}/>
-            <Snow/>
-            <Snow reverse={true}/>
+            <Snow disableMobile={true}/>
+            <Snow reverse={true} disableMobile={true}/>
+            <Snow disableMobile={true}/>
+            <Snow reverse={true} disableMobile={true}/>
+            <Snow disableMobile={true}/>
+            <Snow reverse={true} disableMobile={true}/>
         </header>
     );
 }
