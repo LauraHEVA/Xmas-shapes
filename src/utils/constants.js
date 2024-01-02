@@ -1,10 +1,13 @@
 export const COLORS_BY_THEME = {
-    basic: {
+    christmas: {
       background: 'hsl(212deg, 12%, 15%)',
       lineColors: [
-        '#FE253F',
-        '#25D7FE',
-        '#FEF625',
+        '#B80000',
+        '#8C3333',
+        '#557A46',
+        '#7A9D54',
+        '#F2EE9D',
+        '#F8FAE5',
       ],
     },
     monochrome: {
@@ -20,7 +23,7 @@ export const COLORS_BY_THEME = {
         'hsl(0deg 0% 100% / 0.4)',
       ],
     },
-    'froot-loops': {
+    'nice-colors': {
       background: '#333',
       lineColors: [
         '#AF8ED5',
@@ -31,7 +34,15 @@ export const COLORS_BY_THEME = {
         '#FCDF47',
       ],
     },
-    spooky: {
+    basic: {
+      background: 'hsl(212deg, 12%, 15%)',
+      lineColors: [
+        '#FE253F',
+        '#25D7FE',
+        '#FEF625',
+      ],
+    },
+    'bootcamp-nightmare': {
       background: '#000',
       lineColors: [
         '#FFF',

@@ -2,12 +2,12 @@ import React from 'react';
 import SnowSvg from './SnowSvg.tsx';
 
 const Snow = ({ reverse = false }) => {
-  const green = '#4f772d';
-  const white = '#ed4d4d';
-  const [state, setState] = React.useState({ color: white });
+  const green = '#557A46';
+  const red = '#B80000';
+  const [state, setState] = React.useState({ color: red });
 
   const changeColor = () => {
-    const newColor = state.color === green ? white : green;
+    const newColor = state.color === green ? red : green;
     setState({ color: newColor });
   };
 

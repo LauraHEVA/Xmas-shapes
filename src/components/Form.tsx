@@ -38,14 +38,15 @@ const Form = ({numOfLines, setNumOfLines, colorTheme, setColorTheme, shape, setS
                 setColorTheme(event.target.value);
               }}
             >
-              <option value="basic">Basic</option>
+              <option value="christmas">Christmas</option>
+              <option value="nice-colors">
+                Nice Colors
+              </option>
               <option value="monochrome">
                 Monochrome
               </option>
-              <option value="froot-loops">
-                Froot Loops
-              </option>
-              <option value="spooky">Spooky Night</option>
+              <option value="basic">Basic</option>
+              <option value="bootcamp-nightmare">Bootcamp Nightmare</option>
             </select>
           </div>
         </div>

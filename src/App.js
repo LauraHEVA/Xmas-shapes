@@ -7,7 +7,7 @@ import React from 'react';
 function App() {
   const [numOfLines, setNumOfLines] = React.useState(5);
   const [colorTheme, setColorTheme] =
-  React.useState('basic');
+  React.useState('christmas');
   const [shape, setShape] = React.useState('circles');
   const [numOfPoints, setNumOfPoints] = React.useState(3);
   return (

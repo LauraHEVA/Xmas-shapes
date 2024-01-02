@@ -1,3 +1,7 @@
+.App {
+  width: 100%;
+}
+
 .App-logo {
   height: 100px;
   pointer-events: none;
@@ -12,7 +16,7 @@
 .App-logo-reverse {
   height: 60px;
   pointer-events: none;
-  color: red; /* Not working fine */
+  color: #B80000; /* Not working fine */
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -23,12 +27,24 @@
 
 .App-header {
   padding: 15px;
-  background-color: #e0e1dd;
+  background-color: #F8FAE5;
   height: 10vh;
   display: flex;
   flex-direction: flex-start;
   align-items: center;
   justify-content: center;  
+}
+
+.App-header::after {
+  content: 'Click the snowflakes!';
+  font-family: 'Pacifico', sans-serif;
+  font-size: 20px;
+  padding: 15px;
+  display: block;
+  position: absolute;
+  right: 5px;
+  width: 100px;
+  transform: rotate(-15deg)
 }
 
 @keyframes App-logo-spin {
@@ -60,7 +76,7 @@
 
 .form-wrapper {
   font-family: 'Ubuntu', sans-serif;
-  background-color: #e0e1dd;
+  background-color: #F8FAE5;
   display: flex;
   flex-direction: flex-start;
   align-items: center;
