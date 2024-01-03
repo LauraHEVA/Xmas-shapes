@@ -24,26 +24,47 @@
   }
 }
 
+.header-container {
+  background-color: #F8FAE5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 15vh;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .poke-mario {
+    animation: poke-spin infinite 2s linear; 
+  }
+}
+
+.poke-mario {
+  padding: 20px;
+}
+
 .App-header {
   padding: 15px;
-  background-color: #F8FAE5;
-  height: 10vh;
   display: flex;
   flex-direction: flex-start;
   align-items: center;
   justify-content: center;  
 }
 
-.App-header::after {
-  content: 'Click the snowflakes!';
+.header-text {
   font-family: 'Pacifico', sans-serif;
   font-size: 20px;
   padding: 15px;
-  display: block;
-  position: absolute;
-  right: 5px;
-  width: 100px;
+  width: 90px;  
   transform: rotate(-15deg);
+}
+
+@keyframes poke-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 @keyframes App-logo-spin {
@@ -83,7 +104,7 @@
   height: 15vh;
 }
 
-@media (max-width: 440px) {
+@media (max-width: 740px) {
   .form-wrapper {
     height: 35vh;
     flex-wrap: wrap;
@@ -136,7 +157,7 @@ input[type=range], select {
   gap: 8px;
 }
 
-@media (max-width: 440px) {
+@media (max-width: 740px) {
   .row {
     flex-direction: column;
   }
