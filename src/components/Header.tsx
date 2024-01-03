@@ -8,7 +8,7 @@ const Header = () => {
             <img src={pokeMario} alt="poke-mario" className="poke-mario" height={80} width={80}/>
             <header className="App-header">
                 <Snow reverse={true}/>
-                <Snow/>
+                <Snow disableMobile={true}/>
                 <Snow reverse={true}/>
                 <Snow disableMobile={true}/>
                 <Snow reverse={true} disableMobile={true}/>
