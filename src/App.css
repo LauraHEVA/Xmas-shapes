@@ -16,7 +16,6 @@
 .App-logo-reverse {
   height: 60px;
   pointer-events: none;
-  color: #B80000; /* Not working fine */
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -44,7 +43,7 @@
   position: absolute;
   right: 5px;
   width: 100px;
-  transform: rotate(-15deg)
+  transform: rotate(-15deg);
 }
 
 @keyframes App-logo-spin {

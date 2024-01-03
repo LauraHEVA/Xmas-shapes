@@ -9,6 +9,7 @@ export const COLORS_BY_THEME = {
         '#F2EE9D',
         '#F8FAE5',
       ],
+      snowflake: '#B80000',
     },
     monochrome: {
       background: 'black',
@@ -22,6 +23,7 @@ export const COLORS_BY_THEME = {
         'hsl(0deg 0% 100% / 0.6)',
         'hsl(0deg 0% 100% / 0.4)',
       ],
+      snowflake: '#FCF5ED',
     },
     'nice-colors': {
       background: '#333',
@@ -33,6 +35,7 @@ export const COLORS_BY_THEME = {
         '#96DDF8',
         '#FCDF47',
       ],
+      snowflake: '#F3F3F3',
     },
     basic: {
       background: 'hsl(212deg, 12%, 15%)',
@@ -41,6 +44,7 @@ export const COLORS_BY_THEME = {
         '#25D7FE',
         '#FEF625',
       ],
+      snowflake: '#A2EF44',
     },
     'bootcamp-nightmare': {
       background: '#000',
@@ -50,5 +54,6 @@ export const COLORS_BY_THEME = {
         '#333',
         '#FFF50F',
       ],
+      snowflake: '#FFC436',
     },
   };

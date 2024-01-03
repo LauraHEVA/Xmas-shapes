@@ -1,6 +1,6 @@
 import React from "react";
 
-const SnowSvg = ({ reverse = false, fillColor="#ffffff" }) => {
+const SnowSvg = ({ reverse = false, fillColor="#B80000" }) => {
   return (
     <div className={`App-logo${reverse ? "-reverse" : ""}`}>  
       <svg fill={fillColor} height={reverse ? "60px" : "100px"} width={reverse ? "60px" : "100px"} version="1.1" id="Capa_1" viewBox="0 0 298 298" >
