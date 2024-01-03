@@ -5,7 +5,6 @@ import {
   convertPolarToCartesian,
 } from '../utils/values.js';
 import React from 'react';
-import SnowSvg from './SnowSvg.jsx';
 
 function Circle({ index, colors }) {
   return (
